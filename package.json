@@ -1,12 +1,14 @@
 {
 	"name": "electron-app",
-	"version": "1.0.0",
+	"version": "1.0.7",
 	"description": "My test electron app",
 	"main": "main.js",
 	"scripts": {
 		"test": "echo \"Error: no test specified\" && exit 1",
 		"watch": "nodemon --exec electron .",
 		"start": "electron .",
+		"dist": "electron-builder",
+
 		"release": "electron-builder --mac --win -p always"
 	},
 	"publish": {
@@ -34,9 +36,12 @@
 	"license": "ISC",
 	"devDependencies": {
 		"electron": "^29.1.5",
-		"electron-builder": "^24.13.3",
-		"electron-log": "^5.1.2",
-		"electron-updater": "^5.3.0"
+		"electron-builder": "^24.13.3"
 	},
-	"dependencies": {}
+	"dependencies": {
+		"electron-updater": "^5.3.0",
+		"electron-log": "^5.1.2"
+
+
+  }
 }
